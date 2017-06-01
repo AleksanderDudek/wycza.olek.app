@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adudek.metronom.AddConcert">
+
+
+    <EditText
+        android:id="@+id/editText_ConcertTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nazwa koncertu ..."
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"/>
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:layout_below="@id/editText_ConcertTitle"
+       android:layout_marginBottom="50dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp">
+
+       <RelativeLayout
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:layout_weight=".5"
+           android:orientation="vertical">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Wybrane piosenki"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/textView_SelectedSongs"
+               android:layout_marginBottom="10dp"
+               />
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/list_view_SelectedSongs"
+               android:layout_below="@+id/textView_SelectedSongs"/>
+
+       </RelativeLayout>
+
+       <RelativeLayout
+           android:layout_width="0dip"
+           android:layout_height="match_parent"
+           android:layout_weight=".5"
+           android:orientation="vertical"
+           android:layout_alignParentRight="true">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Piosenki do wyboru"
+               android:layout_centerHorizontal="true"
+               android:id="@+id/textView_SongsToSelect"
+               android:layout_marginBottom="10dp"
+               />
+           <ListView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/list_view_SongsToSelect"
+               android:layout_below="@+id/textView_SongsToSelect"/>
+       </RelativeLayout>
+
+   </LinearLayout>
+
+    <Button
+        android:id="@+id/button_AddSong"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Dodaj"
+        android:onClick="AddSong"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="adudek.metronom.AddConcert">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView"-->
+        <!--android:layout_width="133dp"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:text="TextView"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:text="@string/add_show"-->
+        <!--android:layout_marginStart="16dp" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:text="@string/return_tag"-->
+        <!--android:layout_marginEnd="8dp" />-->
+
+    <!--<EditText-->
+        <!--android:id="@+id/editText"-->
+        <!--android:layout_width="237dp"-->
+        <!--android:layout_height="62dp"-->
+        <!--android:layout_marginLeft="85dp"-->
+        <!--android:layout_marginTop="79dp"-->
+        <!--android:ems="10"-->
+        <!--android:inputType="textPersonName"-->
+        <!--android:text="Name"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:text="@string/name_tag"-->
+        <!--android:layout_marginStart="85dp" />-->
+
+    <!--<ListView-->
+        <!--android:layout_width="172dp"-->
+        <!--android:layout_height="290dp"-->
+        <!--android:layout_marginLeft="18dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--app:layout_constraintHorizontal_bias="0.0"-->
+        <!--app:layout_constraintLeft_toRightOf="@+id/listView"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText"-->
+        <!--android:id="@+id/listView2" />-->
+
+    <!--<ListView-->
+        <!--android:id="@+id/listView"-->
+        <!--android:layout_width="167dp"-->
+        <!--android:layout_height="289dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginStart="11dp"-->
+        <!--android:layout_marginTop="12dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/editText" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button3"-->
+        <!--android:layout_width="231dp"-->
+        <!--android:layout_height="41dp"-->
+        <!--android:layout_marginBottom="6dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/listView"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/listView2"-->
+        <!--tools:text="@string/add_button" />-->
+
+<!--</android.support.constraint.ConstraintLayout>-->

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adudek.metronom.ConcertList">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/list_view_Concerts"
+        android:layout_below="@+id/upperPanel"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/upperPanel"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView_concertsHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lista koncertów"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"/>
+
+        <Button
+            android:id="@+id/button_NewConcert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dodaj koncert"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:onClick="OpenAddConcertActivity"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--tools:context="adudek.metronom.ConcertList">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="209dp"-->
+        <!--android:layout_height="34dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:layout_marginRight="8dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="TextView"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/listView"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:text="@string/show_list"-->
+        <!--app:layout_constraintHorizontal_bias="0.106"-->
+        <!--app:layout_constraintVertical_bias="0.0" />-->
+
+    <!--<ListView-->
+        <!--android:layout_width="335dp"-->
+        <!--android:layout_height="415dp"-->
+        <!--android:layout_marginBottom="33dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--tools:layout_editor_absoluteX="25dp"-->
+        <!--android:id="@+id/listView" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button7"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginRight="24dp"-->
+        <!--android:layout_marginTop="1dp"-->
+        <!--android:text="Button"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--tools:text="@string/add_button" />-->
+<!--</android.support.constraint.ConstraintLayout>-->

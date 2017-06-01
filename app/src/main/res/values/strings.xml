@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Metronom</string>
+    <string name="add_button">Dodaj</string>
+    <string name="return_tag">Wróć</string>
+    <string name="previous">Poprzedni</string>
+    <string name="play_stop">Graj/Stop</string>
+    <string name="next">Nąstepny</string>
+    <string name="add_show">Dodaj koncert</string>
+    <string name="note_tag">Notatka...</string>
+    <string name="name_tag">Nazwa...</string>
+    <string name="tempo_tag">Tempo...</string>
+    <string name="metronome">Metronom</string>
+    <string name="tap_button">Uderzaj</string>
+    <string name="show_list">Lista koncertów</string>
+    <string name="track_list">Lista utworów</string>
+
+
+
+
+
+
+</resources>

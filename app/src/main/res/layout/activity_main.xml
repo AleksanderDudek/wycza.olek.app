@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="adudek.metronom.MainActivity">
+
+    <Button
+        android:id="@+id/button_Metronom"
+        android:onClick="openMetronom"
+        android:text="Metronom"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        />
+
+    <Button
+        android:id="@+id/button_ConcertLists"
+        android:onClick="openConcertLists"
+        android:text="Lista koncertów"
+        android:layout_centerHorizontal="true"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/button_Metronom"/>
+
+
+    <Button
+        android:id="@+id/button_SongsList"
+        android:onClick="openListSongs"
+        android:text="Lista utworów"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/button_ConcertLists"
+        android:layout_alignStart="@+id/button_ConcertLists"/>
+
+
+</RelativeLayout>
