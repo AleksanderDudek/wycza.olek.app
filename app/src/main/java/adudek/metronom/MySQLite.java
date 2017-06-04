@@ -135,9 +135,9 @@ public class MySQLite extends SQLiteOpenHelper
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        concert.computeSongsDuration();
-        values.put("name", concert.getName());
-        values.put("songsDuration", concert.getSongsDuration());
+//        concert.computeSongsDuration();
+//        values.put("name", concert.getName());
+//        values.put("songsDuration", concert.getSongsDuration());
 
         db.insert("concerts", null, values);
         db.close();

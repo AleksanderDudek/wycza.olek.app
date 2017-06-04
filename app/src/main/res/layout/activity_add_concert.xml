@@ -74,11 +74,11 @@
    </LinearLayout>
 
     <Button
-        android:id="@+id/button_AddSong"
+        android:id="@+id/button_AddConcertBtn"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="Dodaj"
-        android:onClick="AddSong"
+        android:text="Dodaj koncert"
+        android:onClick="AddConBtn"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

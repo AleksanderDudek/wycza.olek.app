@@ -23,6 +23,9 @@ public class AddSong extends AppCompatActivity {
         EditText duration = (EditText) findViewById(R.id.editText_SongDuration);
         EditText measure = (EditText) findViewById(R.id.editText_tact);
 
+
+
+
         //tutaj tworze nowa piosenke
         Song song = new Song(title.getText().toString(), Integer.parseInt(rate.getText().toString()),Integer.parseInt(measure.getText().toString()), Integer.parseInt(duration.getText().toString()), extraInfo.getText().toString());
 

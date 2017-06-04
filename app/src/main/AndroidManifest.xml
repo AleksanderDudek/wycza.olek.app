@@ -22,6 +22,8 @@
         <activity android:name=".AddSong" />
         <activity android:name=".AddConcert" />
         <activity android:name=".ConcertActivity"></activity>
+        <activity android:name=".EditSong"></activity>
+
     </application>
 
 </manifest>

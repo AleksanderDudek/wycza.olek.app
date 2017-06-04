@@ -9,11 +9,24 @@ import java.util.ArrayList;
 
 public class Concert implements Serializable
 {
-    private ArrayList<Song> listOfSongs;
-    private String name;
+//    private ArrayList<Song> listOfSongs;
+
+
     private int id_Concert;
-    private int songsDuration; // in seconds
-    private static int idNumber = 1;
+//    private int songId;
+//    private int songsDuration; // in seconds
+    private static int idNumber =  1;
+    private String name;
+    private String listOfSongIds;
+
+    public String getListOfSongIds() {
+        return listOfSongIds;
+    }
+
+    public void setListOfSongIds(String listOfSongIds) {
+        this.listOfSongIds = listOfSongIds;
+    }
+
 
     public Concert() {}
 
@@ -22,43 +35,15 @@ public class Concert implements Serializable
         this.name = name;
         this.id_Concert = idNumber;
         idNumber++;
-        listOfSongs = new ArrayList<>();
+    }
+    public Concert(String name, String listOfIds)
+    {
+        this.name = name;
+        this.listOfSongIds = listOfIds;
+        this.id_Concert = idNumber;
+        idNumber++;
     }
 
-    public void computeSongsDuration()
-    {
-        songsDuration = 0;
-        for (Song song: listOfSongs)
-        {
-            songsDuration += song.getDuration();
-        }
-    }
-
-    public int getSongsDuration()
-    {
-        return songsDuration;
-    }
-
-    public static int getIdNumber()
-    {
-        return idNumber;
-    }
-
-    public ArrayList<Song> getListOfSongs()
-    {
-        return listOfSongs;
-    }
-
-    public void setListOfSongs(ArrayList<Song> listOfSongs)
-    {
-        this.listOfSongs = listOfSongs;
-    }
-
-    public void addSongToList(Song song)
-    {
-        this.listOfSongs.add(song);
-        this.songsDuration += song.getDuration();
-    }
 
     public String getName()
     {
